@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TP2</title>
+</head>
+<style>
+    li {
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        margin: 5px;
+        background-image: url('images/subicon.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        font-family: Arial; 
+    }
+
+    ul.sous_menu {
+        display: none;
+    }
+
+    li:hover {
+        color: rgb(0, 255, 255);
+        background-color: rgba(0, 0, 255, 0.2);
+    }
+
+    li:hover>ul.sous_menu {
+        display: block;
+        position: absolute;
+        top: -20%;
+        left: 80%;
+    }
+
+    img {
+        max-width: 20px;
+        max-height: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .title {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+
+    .background {
+        background-image: url('images/Fond.png');
+        background-repeat: no-repeat;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    .noArrow {
+        background-image: none;
+    }
+</style>
+
+<body class="background">
+    <div class="title"> Favoris</div>
+    <br>
+    <ul>
+        <li>
+            <img src="images/music_icon.png" alt=""> Musiques
+            <ul class="sous_menu">
+                <li>Rock
+                    <ul class="sous_menu">
+                        <li>Simple Plan
+                            <ul class="sous_menu">
+                                <li class="noArrow">Pierre Bouvier</li>
+                                <li class="noArrow">Jeff Stinco</li>
+                            </ul>
+                        </li>
+                        <li>Green Day
+                            <ul class="sous_menu">
+                                <li class="noArrow">Billie Joe</li>
+                                <li class="noArrow">Tre Cool</li>
+                            </ul>
+                        </li>
+                        <li>The Beatles <ul class="sous_menu">
+                                <li class="noArrow">John Lennon</li>
+                                <li class="noArrow">Paul McCartney</li>
+                            </ul>
+                        </li>
+
+                </li>
+            </ul>
+
+        <li>Jazz <ul class="sous_menu">
+                <li>Pat Metheny
+                    <ul class="sous_menu">
+                        <li class="noArrow">Pat Metheny</li>
+                        <li class="noArrow">Cuong Vu</li>
+                    </ul>
+                </li>
+                <li class="noArrow">Miles Davis
+                    <ul class="sous_menu">
+                    </ul>
+                </li>
+                <li>UZEB <ul class="sous_menu">
+                        <li class="noArrow">Alain Caron</li>
+                        <li class="noArrow">Michel Cusson</li>
+                    </ul>
+                </li>
+
+        </li>
+    </ul>
+    </li>
+    <li>Latin<ul class="sous_menu">
+            <li class="noArrow">Bad Bunny
+            </li>
+            <li class="noArrow">J Balvin
+            </li>
+            <li class="noArrow">Ozuna
+            </li>
+
+    </li>
+    </ul>
+    </li>
+    <li>Blues<ul class="sous_menu">
+            <li>B. B. King
+                <ul class="sous_menu">
+                    <li class="noArrow">James Bolden</li>
+                    <li class="noArrow">Reggie Rich</li>
+                </ul>
+            </li>
+            <li>Albert King
+                <ul class="sous_menu">
+                    <li class="noArrow">Albert King</li>
+                    <li class="noArrow">Duck Dunn</li>
+                </ul>
+            </li>
+            <li>ZZ Top <ul class="sous_menu">
+                    <li class="noArrow">Billy</li>
+                    <li class="noArrow">Frank</li>
+                </ul>
+            </li>
+
+    </li>
+    </ul>
+    </li>
+    <li>Metal<ul class="sous_menu">
+            <li>Black Sabbath
+                <ul class="sous_menu">
+                    <li class="noArrow">Ozzy Osbourne</li>
+                    <li class="noArrow">Tony Iommi</li>
+                </ul>
+            </li>
+            <li>Iron Maiden
+                <ul class="sous_menu">
+                    <li class="noArrow">Steve Harris</li>
+                    <li class="noArrow">Dave Murray</li>
+                </ul>
+            </li>
+            <li>Metallica <ul class="sous_menu">
+                    <li class="noArrow">Lars Ulrich</li>
+                    <li class="noArrow">James Hetfield</li>
+                </ul>
+            </li>
+
+    </li>
+    </ul>
+    </li>
+    <li>Classic<ul class="sous_menu">
+            <li class="noArrow">Mozart</li>
+            <li class="noArrow">Bach</li>
+            <li class="noArrow">Chopin</li>
+    </li>
+    </ul>
+    </li>
+    <li>Folk<ul class="sous_menu">
+            <li class="noArrow">Ani DiFranco</li>
+            <li class="noArrow">Ben Harper</li>
+            <li class="noArrow">Bob Dylan</li>
+
+    </li>
+    </ul>
+    </li>
+    </ul>
+    <li>
+        <img src="images/news_icon.png" alt=""> Nouvelles
+        <ul class="sous_menu">
+            <li class="noArrow"> <a href="https://ici.radio-canada.ca/"><img src="images/radio_canada_icon.png" alt=""> Radio-Canada</a>
+            <li class="noArrow"> <a href=" https://www.nbc.com/"> <img src="images/nbc_icon.png" alt=""> NBC news</a> </li>
+            <li class="noArrow"> <a href=": https://www.cnn.com/"> <img src="images/cnn_icon.png" alt=""> CNN news</a> </li>
+            <li> <img src="images/meteo_icon.png" alt=""> Météo </a>
+                <ul class="sous_menu">
+                    <li class="noArrow"> <a href="https://www.meteomedia.com/ca/meteo/quebec/sainte-therese"> <img
+                                src="images/meteo_media_icon.png" alt=""> Météomédia </a> </li>
+                    <li class="noArrow"> <a href="https://www.nhc.noaa.gov/"> <img src="images/Hurricane_icon.png"
+                                alt=""> Ouragan</a>
+                    </li>
+                    <li class="noArrow"> <a href="https://www.wunderground.com/wundermap/"> <img
+                                src="images/wunder_icon.png" alt=""> Wunder Ground</li></a>
+                </ul>
+            </li>
+
+    </li>
+    </li>
+    </ul>
+    <li>
+        <img src="images/game_icon.png" alt=""> Jeux
+        <ul class="sous_menu">
+            <li class="noArrow"> <a href="http://zone.msn.com/en/backgammon/default.htm"> <img
+                        src="images/backgammon_icon.png" alt=""> Backgammon</li></a>
+                        <li class="noArrow"> <a href="https://www.mah-jongg.ch/reversi/reversi.html"> <img src="/images/reversi_icon.png" alt=""> Reversi </a> </li>
+        </ul>
+    </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="images/contact_icon.png" alt=""> Contacts
+            <ul class="sous_menu">
+                <li class ="noArrow"> <a href="https://www.facebook.com/"> <img src="images/facebook_icon.png" alt=""> Facebook </a></li>
+                <li class ="noArrow"> <a href="https://www.twitter.com/"> <img src="images/twitter_icon.png" alt=""> Twitter </a></li>
+                <li class ="noArrow"> <a href="https://accounts.google.com/"> <img src="images/google_plus_icon.png" alt=""> Google+ </a></li>
+            </ul>
+        </li>
+
+
+
+
+
+
+</body>
+
+</html>
